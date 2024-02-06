@@ -1,0 +1,8 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true" android:height="200dp" android:viewportHeight="60" android:viewportWidth="60" android:width="200dp">
+    <!--  Rectangle  -->
+    <path android:fillColor="#00FFFFFF" android:pathData="M25,12l0,26 -26,0 0,-26 26,0z"/>
+    <!--  Top Hole filled with color  -->
+    <path android:fillColor="#4B0082" android:pathData="M25,30c3.6,0 6,2.6 6,4 0,1.6-2.4,4-6,4 -3.6,0-6-2.6-6-4 0-1.5 2.4-4 6-4z"/>
+    <!--  Bottom Hole filled with color  -->
+    <path android:fillColor="#4B0082" android:pathData="M25,12c3.6,0 6,2.6 6,4 0,1.6-2.4,4-6,4 -3.6,0-6-2.6-6-4 0-1.5 2.4-4 6-4z"/>
+</vector>

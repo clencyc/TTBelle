@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragments.list.lists.listfragment"
+        android:theme="@style/Theme.AppCompat">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E8E8E8">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- using Linear Layout To add
+                   multiple views inside it  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="840dp"
+                    android:orientation="vertical"
+                    tools:ignore="ExtraText">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:background="@drawable/ellipse" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="-180dp"
+                        android:text="Spend account"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Accountstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="-0dp"
+                        android:text="$0.30"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/btnround"
+                        android:padding="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="$ SendMoney"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="350dp"
+                        android:layout_marginTop="-190dp"
+                        android:src="@drawable/settings" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="-45dp"
+                        android:text="BSB 670-864"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        android:text="Acc 2578 5762"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="220dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardBackgroundColor="#D6CECE"
+                        android:id="@+id/searchcard"
+                        >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/magnifyinglass"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:text="Search"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="7dp"
+
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/searchcard"
+                        android:autofillHints="name" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF3700B3"
+            android:src="@drawable/baseline_add_24"
+            android:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+
+
+
+    </RelativeLayout>
